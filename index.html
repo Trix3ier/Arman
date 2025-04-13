@@ -166,11 +166,34 @@
       <p>Live and Learn от Crush 40 с голосом Арман™</p>
       <button onclick="alert('Шторка с аудио скоро появится')">Послушать</button>
     </div>
-    <div class="card">
-      <h3>Eggman's Superlaser of PISS</h3>
-      <p>PISSING ON THE MOON LIKE A REAL EGGMAN</p>
-      <button onclick="alert('Скоро появится шторка с видео из YouTube')">Смотреть обзор</button>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Арман™</title>
+    <!-- Здесь могут быть другие ссылки на стили или шрифты -->
+</head>
+<body>
+    <!-- Карточка товара: Eggman's Superlaser of PISS -->
+    <div class="product-card">
+        <h3>Eggman's Superlaser of PISS (создано от Арман™ при поддержке SEGA™)</h3>
+        <p>PISSING ON THE MOON LIKE A REAL EGGMAN</p>
+        <button onclick="toggleVideo('video11')">🎬 Смотреть обзор</button>
+        <div id="video11" style="display:none; margin-top:10px;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fueRUi5AWWQ" frameborder="0" allowfullscreen></iframe>
+        </div>
     </div>
+
+    <!-- Скрипт для показа/скрытия видео -->
+    <script>
+        function toggleVideo(id) {
+            var video = document.getElementById(id);
+            video.style.display = video.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</body>
+</html>
     <div class="card">
       <h3>Человек с яйцами и просто человек</h3>
       <p>Услуги братьев на час — решат любую проблему</p>
