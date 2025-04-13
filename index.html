@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Арман™</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+    header {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    header p {
+      margin: 10px 0;
+    }
+    .scroll-button {
+      background: #ff8c00;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      gap: 20px;
+      justify-content: center;
+    }
+    .card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      width: 300px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      margin-top: 0;
+    }
+    .card button {
+      margin: 5px 5px 0 0;
+      padding: 8px 12px;
+      border: none;
+      cursor: pointer;
+    }
+    .respect-btn { background: #0077cc; color: white; }
+    .coin-btn { background: #222; color: white; }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #222;
+      color: white;
+    }
+    #support-window {
+      display: none;
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 300px;
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      padding: 10px;
+      z-index: 1000;
+    }
+    #chat {
+      height: 200px;
+      overflow-y: auto;
+      border: 1px solid #eee;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    #chat input {
+      width: calc(100% - 10px);
+      padding: 5px;
+    }
+    #call-screen {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      z-index: 1100;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Арман™</h1>
+    <p>Доставка также быстра как скорость Боевого вертолета М8, честно также как и работа Нигерийского деятеля культуры Омархаяма</p>
+    <button class="scroll-button" onclick="document.getElementById('products').scrollIntoView({ behavior: 'smooth' })">Купить за уважение</button>
+  </header>
+
+  <section id="products" class="products">
+    <div class="card">
+      <h3>Личный Джозеф</h3>
+      <p>Наймите личного Джозефа, который будет делать всё что вы скажете (9,99 Арман коинов в час)</p>
+      <button class="respect-btn" onclick="alert('У вас недостаточно уважения к великой компании Арман™')">Купить за уважение</button>
+      <button class="coin-btn" onclick="alert('Недоступно в вашей жопе мира')">Купить за Арман коины</button>
+    </div>
+    <div class="card">
+      <h3>Лучшее уведомление</h3>
+      <p>Купите это предложение, чтобы бот орал вам в ЛС, например: "АРМАН КУПИ ЯЙЦА"</p>
+      <button class="respect-btn" onclick="alert('У вас недостаточно уважения к великой компании Арман™')">Купить за уважение</button>
+      <button class="coin-btn" onclick="alert('Недоступно в вашей жопе мира')">Купить за Арман коины</button>
+    </div>
+    <div class="card">
+      <h3>Набор "строительный дом"</h3>
+      <p>В набор входит: арматура +60 штук, цемент для фундамента, кирпичи для 1 этажа и крыши</p>
+      <button class="respect-btn" onclick="alert('У вас недостаточно уважения к великой компании Арман™')">Купить за уважение</button>
+      <button class="coin-btn" onclick="alert('Недоступно в вашей жопе мира')">Купить за Арман коины</button>
+    </div>
+    <div class="card">
+      <h3>Эксклюзивная серия "Тома и Джерри"</h3>
+      <p>Новый сюжет, новые хозяева: Алихан и Сафия. Рычит Арман. Новый юмор.</p>
+      <button class="respect-btn" onclick="alert('У вас недостаточно уважения к великой компании Арман™')">Купить за уважение</button>
+      <button class="coin-btn" onclick="alert('Недоступно в вашей жопе мира')">Купить за Арман коины</button>
+    </div>
+    <div class="card">
+      <h3>Туристический поход в Mystic Cave Zone</h3>
+      <p>Узнай про путь легендарного Армана™ и как он преодолел трудности</p>
+      <button class="respect-btn" onclick="alert('У вас недостаточно уважения к великой компании Арман™')">Купить за уважение</button>
+      <button class="coin-btn" onclick="alert('Недоступно в вашей жопе мира')">Купить за Арман коины</button>
+    </div>
+    <div class="card">
+      <h3>Курсы "Диктора мастерской настроения"</h3>
+      <p>Узнай секреты диктора Арман™ и стань таким же как он</p>
+      <button class="respect-btn" onclick="alert('У вас недостаточно уважения к великой компании Арман™')">Купить за уважение</button>
+      <button class="coin-btn" onclick="alert('Недоступно в вашей жопе мира')">Купить за Арман коины</button>
+    </div>
+    <div class="card">
+      <h3>Телохранитель "Принц Чарминг"</h3>
+      <p>Защитит от всего, поможет во всём (может даже забить 2 гола за 10 сек)</p>
+      <button class="respect-btn" onclick="alert('У вас недостаточно уважения к великой компании Арман™')">Купить за уважение</button>
+      <button class="coin-btn" onclick="alert('Недоступно в вашей жопе мира')">Купить за Арман коины</button>
+    </div>
+    <div class="card">
+      <h3>Черная дыра</h3>
+      <p>Создайте черную дыру в желудке и ешьте всё без набора веса</p>
+      <button class="respect-btn" onclick="alert('У вас недостаточно уважения к великой компании Арман™')">Купить за уважение</button>
+      <button class="coin-btn" onclick="alert('Недоступно в вашей жопе мира')">Купить за Арман коины</button>
+    </div>
+    <div class="card">
+      <h3>Комиксы "Multi-verse Mayhem"</h3>
+      <p>7 томов от Арман™ (первые 5 сразу, 6-7 позже)</p>
+      <button class="respect-btn" onclick="alert('У вас недостаточно уважения к великой компании Арман™')">Купить за уважение</button>
+      <button class="coin-btn" onclick="alert('Недоступно в вашей жопе мира')">Купить за Арман коины</button>
+    </div>
+    <div class="card">
+      <h3>Live and Learn (Арман™ Edition)</h3>
+      <p>Live and Learn от Crush 40 с голосом Арман™</p>
+      <button onclick="alert('Шторка с аудио скоро появится')">Послушать</button>
+    </div>
+    <div class="card">
+      <h3>Eggman's Superlaser of PISS</h3>
+      <p>PISSING ON THE MOON LIKE A REAL EGGMAN</p>
+      <button onclick="alert('Скоро появится шторка с видео из YouTube')">Смотреть обзор</button>
+    </div>
+    <div class="card">
+      <h3>Человек с яйцами и просто человек</h3>
+      <p>Услуги братьев на час — решат любую проблему</p>
+      <button class="respect-btn" onclick="alert('У вас недостаточно уважения к великой компании Арман™')">Купить за уважение</button>
+      <button class="coin-btn" onclick="alert('Недоступно в вашей жопе мира')">Купить за Арман коины</button>
+    </div>
+    <div class="card">
+      <h3>Interesting Keyboard</h3>
+      <p>Создано компанией Арман™. P.S. should I fuck this keyboard?</p>
+      <button class="respect-btn" onclick="alert('У вас недостаточно уважения к великой компании Арман™')">Купить за уважение</button>
+      <button class="coin-btn" onclick="alert('Недоступно в вашей жопе мира')">Купить за Арман коины</button>
+    </div>
+    <div class="card">
+      <h3>Baby oil</h3>
+      <p>Особое детское масло от METAL BABY™</p>
+      <button class="respect-btn" onclick="alert('У вас недостаточно уважения к великой компании Арман™')">Купить за уважение</button>
+      <button class="coin-btn" onclick="alert('Недоступно в вашей жопе мира')">Купить за Арман коины</button>
+    </div>
+    <div class="card">
+      <h3>Набор "Трио на час"</h3>
+      <p>Услуги Джозефа, Принца Чарминга и Человека с яйцами — со скидкой 10%</p>
+      <button class="respect-btn" onclick="alert('У вас недостаточно уважения к великой компании Арман™')">Купить за уважение</button>
+      <button class="coin-btn" onclick="alert('Недоступно в вашей жопе мира')">Купить за Арман коины</button>
+    </div>
+  </section>
+
+  <footer>
+    Сделано с любовью и цементом
+    <br>
+    <button onclick="toggleSupport()">Тех. Поддержка</button>
+  </footer>
+
+  <div id="support-window">
+    <div id="chat">
+      <p><strong>Арман™:</strong> Не звони мне, я с цементом</p>
+    </div>
+    <input type="text" placeholder="Написать..." onkeydown="handleChat(event)">
+    <button onclick="startCall()">Позвонить</button>
+  </div>
+
+  <div id="call-screen">
+    <p>Звонок в тех. поддержку...</p>
+    <audio id="ringtone" src="https://www.soundjay.com/button/beep-07.wav" autoplay loop></audio>
+  </div>
+
+  <script>
+    function toggleSupport() {
+      const win = document.getElementById('support-window');
+      win.style.display = win.style.display === 'block' ? 'none' : 'block';
+    }
+
+    function handleChat(e) {
+      if (e.key === 'Enter') {
+        const chat = document.getElementById('chat');
+        const input = e.target;
+        const msg = input.value.trim();
+        if (msg) {
+          chat.innerHTML += `<p><strong>Вы:</strong> ${msg}</p>`;
+          chat.innerHTML += `<p><strong>Арман™:</strong> Не пишите, я с цементом</p>`;
+          input.value = '';
+          chat.scrollTop = chat.scrollHeight;
+        }
+      }
+    }
+
+    function startCall() {
+      const call = document.getElementById('call-screen');
+      call.style.display = 'block';
+      const ringtone = document.getElementById('ringtone');
+      setTimeout(() => {
+        ringtone.pause();
+        call.innerHTML = '<p>Сказал же — с цементом</p>';
+        setTimeout(() => {
+          call.style.display = 'none';
+        }, 3000);
+      }, 60000);
+    }
+  </script>
+</body>
+</html>
